@@ -1,5 +1,3 @@
-/* Mobile-First Design */
-
 :root {
     --almostWhite: hsl(0, 0%, 98%);
     --mediumGray: hsl(0, 0%, 41%);
@@ -7,8 +5,15 @@
 }
 
 body {
+    background-color: var(--almostWhite);
+    color: var(--almostBlack);
     font-family: 'Epilogue', sans-serif;
     margin: 0;
+}
+
+/* Mobile-First Design */
+.desktop-only {
+    display: none;
 }
 
 .wrapper {
@@ -18,16 +23,93 @@ body {
     height: 100vh;
     width: 100vw;
 }
+.darken {
+    display: none;
+}
+.darken.active {
+    display: block;
+    background-color: hsla(0, 0%, 41%, 0.5);
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
 
 .header {
     display: flex;
     justify-content: space-between;
     margin: 5% 3% 0;
 }
-
-.dropdown-nav button {
+.header button {
     background-color: transparent;
     border: none;
+    color: var(--mediumGray);
+    font-family: 'Epilogue', sans-serif;
+    font-size: 18px;
+}
+
+.logo {
+}
+
+.navigation {
+    display: none;
+}
+.navigation.active {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 100vh;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    padding: 5% 3% 0 5%;
+    margin-top: -5%;
+}
+.navigation a {
+    color: var(--mediumGray);
+    font-size: 18px;
+    padding-left: 6px;
+    text-decoration: none;
+}
+#nav-close {
+    float: right;
+}
+
+.nav-main {
+    display: grid;
+    grid-template-rows: auto;
+    grid-row-gap: 25px;
+    margin: 25px 0;
+}
+
+.dropdown {
+}
+.dropdown-button {
+}
+.dropdown-content {
+    display: none;
+}
+.active > .dropdown-content {
+    display: grid;
+    grid-template-rows: auto;
+    grid-row-gap: 25px;
+    margin: 25px 0 0 25px;
+}
+.dropdown-content img {
+    margin-right: 10px;
+}
+
+.nav-login {
+    display: grid;
+    grid-template-rows: auto;
+    grid-row-gap: 15px;
+    text-align: center;
+}
+.register {
+    border: 2px solid var(--mediumGray);
+    border-radius: 10px;
+    padding: 15px 0;
+    margin: auto;
+    width: 80%;
 }
 
 .hero img {
@@ -35,30 +117,36 @@ body {
     width: 100%;
 }
 
-.info {
+.content {
     text-align: center;
 }
-.info p {
+.content p {
     color: var(--mediumGray);
     font-size: 18px;
     line-height: 1.7rem;
 }
-.info button {
+
+.cta {
     background-color: black;
     border: none;
     border-radius: 15px;
-    color: white;
     font-family: 'Epilogue', sans-serif;
     font-size: 18px;
-    margin-top: 5%;
-    padding: 20px 30px;
+    padding: 20px 0;
+    margin: auto;
+    width: 50%;
+}
+.cta a {
+    color: white;
+    text-decoration: none;
 }
 
 .client {
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 5%;
     margin: 5% 5%;
+    padding-bottom: 20px;
 }
 
 .client-logo {

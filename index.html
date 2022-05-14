@@ -19,32 +19,75 @@
 
 <body>
     <div class="wrapper">
+        <div class="darken">
+
+        </div>
         <div class="header">
             <div class="logo">
-                <img src="images/logo.svg" alt="snap-logo">
+                <a href="#"><img src="images/logo.svg" alt="site-logo"></a>
             </div>
 
-            <div class="dropdown-nav">
-                <button type="button" name="button"><img src="images/icon-menu.svg" alt="menu-icon"></button>
-                <!-- Features
-                Company
-                Careers
-                About
-
-                Login
-                Register -->
+            <div class="nav-button">
+                <button type="button" id="nav-open"><img src="images/icon-menu.svg" alt="open-nav"></button>
             </div>
+            <div class="navigation">
+                <div class="nav-button">
+                    <button type="button" id="nav-close"><img src="images/icon-close-menu.svg" alt="close-nav"></button>
+                </div>
+                <div class="nav-main">
+                    <div class="dropdown">
+                        <div class="dropdown-button">
+                            <button type="button" name="features">Features <img src="images/icon-arrow-down.svg" alt="arrow"></button>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="#"><img src="images/icon-todo.svg" alt="todo">Todo List</a>
+                            <a href="#"><img src="images/icon-calendar.svg" alt="calendar">Calendar</a>
+                            <a href="#"><img src="images/icon-reminders.svg" alt="reminders">Reminders</a>
+                            <a href="#"><img src="images/icon-planning.svg" alt="planning">Planning</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <div class="dropdown-button">
+                            <button type="button" name="company">Company <img src="images/icon-arrow-down.svg" alt="arrow"></button>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="#">History</a>
+                            <a href="#">Our Team</a>
+                            <a href="#">Blog</a>
+                        </div>
+                    </div>
+
+                    <a role="button" href="#">Careers</a>
+                    <a role="button" href="#">About</a>
+                </div>
+
+                <div class="nav-login">
+                    <a class="login" role="button" href="#">Login</a>
+                    <a class="register" role="button" href="#">Register</a>
+                </div>
+            </div>
+
         </div>
 
-        <div class="hero">
-            <img src="images/image-hero-mobile.png" alt="man-on-laptop">
+        <div class="hero mobile-only">
+            <img class="mobile-only" src="images/image-hero-mobile.png" alt="person-on-laptop">
         </div>
 
-        <div class="info">
-            <h1 class="title">Make remote work</h1>
-            <p class="body"> Get your team in sync, no matter your location. Streamline processes,
-                create team rituals, and watch productivity soar.</p>
-            <button class="cta" type="button" name="button">Learn more</button>
+        <div class="content">
+            <div class="information">
+                <h1 class="title">Make remote work</h1>
+                <p class="subtitle">Get your team in sync, no matter your location. Streamline processes,
+                    create team rituals, and watch productivity soar.</p>
+            </div>
+
+            <div class="cta">
+                <a role="button" href="#">Learn more</a>
+            </div>
+
+            <div class="hero desktop-only">
+                <img class="desktop-only" src="images/image-hero-desktop.png" alt="person-on-laptop">
+            </div>
         </div>
 
         <div class="client">
