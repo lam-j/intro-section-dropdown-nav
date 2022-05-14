@@ -1,0 +1,66 @@
+/* Mobile-First Design */
+
+:root {
+    --almostWhite: hsl(0, 0%, 98%);
+    --mediumGray: hsl(0, 0%, 41%);
+    --almostBlack: hsl(0, 0%, 8%);
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    margin: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 3%;
+    height: 100vh;
+    width: 100vw;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 3% 0;
+}
+
+.dropdown-nav button {
+    background-color: transparent;
+    border: none;
+}
+
+.hero img {
+    height: auto;
+    width: 100%;
+}
+
+.info {
+    text-align: center;
+}
+.info p {
+    color: var(--mediumGray);
+    font-size: 18px;
+    line-height: 1.7rem;
+}
+.info button {
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 18px;
+    margin-top: 5%;
+    padding: 20px 30px;
+}
+
+.client {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 5%;
+    margin: 5% 5%;
+}
+
+.client-logo {
+    width: 100%;
+}
